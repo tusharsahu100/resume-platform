@@ -41,6 +41,7 @@ export class ResumeComponent {
   skillCategories = [
     { name: 'Frontend', skills: this.skills.filter(s => s.category === 'Frontend') },
     { name: 'Backend', skills: this.skills.filter(s => s.category === 'Backend') },
+    { name: 'Leadership', skills: this.skills.filter(s => s.category === 'Leadership') },
     { name: 'Tools', skills: this.skills.filter(s => s.category === 'Tools') },
     { name: 'Other', skills: this.skills.filter(s => s.category === 'Other') }
   ];
