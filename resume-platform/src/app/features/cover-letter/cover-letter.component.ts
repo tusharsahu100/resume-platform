@@ -1,6 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { HeaderComponent } from '../../shared/components/header/header.component';
 import { FooterComponent } from '../../shared/components/footer/footer.component';
 import { COVER_LETTERS } from '../../core/data/cover-letters.data';
@@ -11,7 +11,7 @@ import { PdfService } from '../../core/services/pdf.service';
 @Component({
   selector: 'app-cover-letter',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, FooterComponent],
+  imports: [CommonModule, RouterLink, HeaderComponent, FooterComponent],
   templateUrl: './cover-letter.component.html'
 })
 export class CoverLetterComponent implements OnInit {
