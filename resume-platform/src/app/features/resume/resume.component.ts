@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { HeaderComponent } from '../../shared/components/header/header.component';
 import { FooterComponent } from '../../shared/components/footer/footer.component';
 import { SkillBarComponent } from '../../shared/components/skill-bar/skill-bar.component';
@@ -18,6 +19,7 @@ import { ScrollService } from '../../core/services/scroll.service';
   standalone: true,
   imports: [
     CommonModule,
+    RouterLink,
     HeaderComponent,
     FooterComponent,
     SkillBarComponent,

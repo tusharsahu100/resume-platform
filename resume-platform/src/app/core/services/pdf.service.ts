@@ -225,7 +225,7 @@ export class PdfService {
   }
 
   private addSkills(doc: jsPDF, skills: Skill[], yPos: number): number {
-    const categories = ['Frontend', 'Backend', 'Tools', 'Other'];
+    const categories = ['Frontend', 'Backend', 'Leadership', 'Tools', 'Other'];
 
     categories.forEach(category => {
       const categorySkills = skills.filter(s => s.category === category);
@@ -280,6 +280,22 @@ export class PdfService {
         yPos = this.addText(doc, desc, yPos, this.PAGE_MARGIN + 0.3, 6.7);
         yPos += 0.05;
       });
+
+      // Achievements (if available)
+      if (exp.achievements && exp.achievements.length > 0) {
+        yPos += 0.1;
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(10);
+        doc.text('Key Achievements:', this.PAGE_MARGIN + 0.1, yPos);
+        yPos += 0.2;
+
+        doc.setFont('helvetica', 'normal');
+        exp.achievements.forEach(achievement => {
+          doc.text('•', this.PAGE_MARGIN + 0.1, yPos);
+          yPos = this.addText(doc, achievement, yPos, this.PAGE_MARGIN + 0.3, 6.7);
+          yPos += 0.05;
+        });
+      }
 
       // Technologies
       doc.setFont('helvetica', 'italic');
