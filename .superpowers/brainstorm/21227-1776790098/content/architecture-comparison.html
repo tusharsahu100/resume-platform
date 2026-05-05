@@ -1,0 +1,78 @@
+<h2>Architecture Decision: What Can We Build?</h2>
+<p class="subtitle">Based on your feature requirements vs deployment choice</p>
+
+<div class="split">
+  <div class="mockup">
+    <div class="mockup-header">Option D: Static Site Only</div>
+    <div class="mockup-body">
+      <h3 style="color: #10b981; margin-top: 0;">✅ What Works</h3>
+      <ul style="line-height: 1.8;">
+        <li><strong>Public Resume View</strong> - Beautiful GitHub-style profile</li>
+        <li><strong>PDF Export</strong> - Client-side generation</li>
+        <li><strong>Project Showcase</strong> - Static content</li>
+        <li><strong>Basic Cover Letter</strong> - Simple templates</li>
+      </ul>
+
+      <h3 style="color: #ef4444; margin-top: 1.5rem;">❌ What Doesn't Work</h3>
+      <ul style="line-height: 1.8;">
+        <li><strong>AI Chat Assistant</strong> - Needs backend for conversation state</li>
+        <li><strong>Intelligent Resume Customization</strong> - Needs LLM processing</li>
+        <li><strong>Smart GitHub Integration</strong> - Rate limited without backend</li>
+        <li><strong>Skills Gap Analysis</strong> - Needs data storage + AI</li>
+        <li><strong>AI Cover Letters</strong> - User must provide their own API key</li>
+      </ul>
+
+      <div style="margin-top: 1.5rem; padding: 1rem; background: #fee; border-left: 3px solid #ef4444;">
+        <strong>Core Issue:</strong> Without a backend, you lose 4 out of 5 AI features you wanted
+      </div>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <div class="mockup-header">Option A: Free Tier (Frontend + Backend)</div>
+    <div class="mockup-body">
+      <h3 style="color: #10b981; margin-top: 0;">✅ All Features Possible</h3>
+      <ul style="line-height: 1.8;">
+        <li><strong>Everything from Option D</strong> +</li>
+        <li><strong>AI Chat Assistant</strong> - Full conversational AI</li>
+        <li><strong>Intelligent Resume Customization</strong> - AI-powered optimization</li>
+        <li><strong>Smart GitHub Integration</strong> - Auto-pull projects</li>
+        <li><strong>Skills Gap Analysis</strong> - Compare vs job descriptions</li>
+        <li><strong>Advanced AI Cover Letters</strong> - Context-aware generation</li>
+        <li><strong>Resume Analytics</strong> - Track views (optional)</li>
+      </ul>
+
+      <h3 style="color: #3b82f6; margin-top: 1.5rem;">💰 Still Free!</h3>
+      <ul style="line-height: 1.8;">
+        <li>Frontend: Vercel/Netlify (free forever)</li>
+        <li>Backend: Render.com free tier</li>
+        <li>Database: MongoDB Atlas (512MB free)</li>
+        <li>AI Calls: Free tier from Claude/OpenAI</li>
+      </ul>
+
+      <div style="margin-top: 1.5rem; padding: 1rem; background: #e0f2fe; border-left: 3px solid #3b82f6;">
+        <strong>Better Portfolio:</strong> Shows full-stack skills (Angular + Node.js + MongoDB + AI integration)
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3 style="margin-top: 2rem;">My Recommendation</h3>
+<div class="options">
+  <div class="option" data-choice="recommended" onclick="toggleSelect(this)">
+    <div class="letter">✨</div>
+    <div class="content">
+      <h3>Go with Option A (Free Tier Full Stack)</h3>
+      <p><strong>Why:</strong> You get ALL 5 AI features you wanted, it's still completely free to host and use, and it better showcases your full-stack capabilities (Angular + Node.js + MongoDB + AI) which is more impressive to employers than a static site.</p>
+      <p><strong>Your strength:</strong> You already have 12+ years experience with this exact stack!</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="static" onclick="toggleSelect(this)">
+    <div class="letter">D</div>
+    <div class="content">
+      <h3>Stick with Static Site (Option D)</h3>
+      <p><strong>Accept:</strong> We'll build a beautiful Angular SPA with basic AI features (PDF export, project showcase), but skip the advanced AI capabilities (chat assistant, intelligent customization, skills gap analysis).</p>
+    </div>
+  </div>
+</div>

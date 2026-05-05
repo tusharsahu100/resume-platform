@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx @angular/cli@latest new resume-platform --routing --style=css --standalone --skip-git)",
+      "Bash(ng version *)",
+      "Bash(ng new *)",
+      "Bash(npm config *)",
+      "Bash(npx tailwindcss *)",
+      "Bash(node_modules/.bin/tailwindcss init *)",
+      "Bash(timeout 15 ng serve)",
+      "Bash(ng build *)",
+      "Bash(timeout 20 ng serve --port 4200)",
+      "Bash(npx ng *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}

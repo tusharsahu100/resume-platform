@@ -1,0 +1,51 @@
+<h2>How do you want to deploy and host the application?</h2>
+<p class="subtitle">This affects architecture decisions and ongoing costs</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Free Tier / Low Cost (Recommended for Portfolio)</h3>
+      <p><strong>Frontend:</strong> GitHub Pages, Vercel, or Netlify (free)<br>
+      <strong>Backend:</strong> Render.com or Railway (free tier)<br>
+      <strong>DB:</strong> MongoDB Atlas (free tier - 512MB)<br>
+      <strong>AI Calls:</strong> Pay-per-use (Claude/OpenAI APIs)<br>
+      <strong>Cost:</strong> ~$0-10/month depending on usage</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>AWS (Enterprise-Grade)</h3>
+      <p><strong>Services:</strong> EC2/ECS, S3, CloudFront<br>
+      <strong>DB:</strong> MongoDB Atlas or DynamoDB<br>
+      <strong>Benefits:</strong> Showcases AWS skills (relevant to current role)<br>
+      <strong>Cost:</strong> ~$20-50/month (can use free tier initially)</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <parameter name="letter">C</div>
+    <div class="content">
+      <h3>Hybrid (Static + Serverless)</h3>
+      <p><strong>Frontend:</strong> Static hosting (GitHub Pages/Vercel)<br>
+      <strong>Backend:</strong> Serverless functions (Vercel/Netlify)<br>
+      <strong>DB:</strong> MongoDB Atlas or Supabase<br>
+      <strong>Benefits:</strong> Cost-effective, auto-scaling<br>
+      <strong>Cost:</strong> Near-zero for low traffic</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="d" onclick="toggleSelect(this)">
+    <div class="letter">D</div>
+    <div class="content">
+      <h3>Simple & Fast (Static Site with Client-Side AI)</h3>
+      <p><strong>Approach:</strong> Single-page Angular app<br>
+      <strong>Hosting:</strong> GitHub Pages (free)<br>
+      <strong>AI:</strong> Client-side API calls (user provides their API key)<br>
+      <strong>Benefits:</strong> Fastest to deploy, zero hosting cost<br>
+      <strong>Limitation:</strong> No backend features, no data persistence</p>
+    </div>
+  </div>
+</div>
