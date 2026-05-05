@@ -15,6 +15,8 @@ export const SKILLS: Skill[] = [
   { category: 'Backend', name: 'Node.js', proficiency: 80, yearsOfExperience: 6 },
   { category: 'Backend', name: 'Express.js', proficiency: 75, yearsOfExperience: 5 },
   { category: 'Backend', name: 'MongoDB', proficiency: 75, yearsOfExperience: 5 },
+  { category: 'Backend', name: '.NET Framework', proficiency: 85, yearsOfExperience: 2 },
+  { category: 'Backend', name: 'AWS (EC2, S3, Lambda)', proficiency: 80, yearsOfExperience: 2 },
 
   // Leadership & Management
   { category: 'Leadership', name: 'Team Leadership & Management', proficiency: 90, yearsOfExperience: 6 },
