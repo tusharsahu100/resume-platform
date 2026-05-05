@@ -1,0 +1,28 @@
+<div class="mb-4">
+  <div class="flex justify-between items-center mb-2">
+    <span class="text-sm font-medium text-gh-dark">{{ skill.name }}</span>
+    <span class="text-sm text-gh-light">{{ skill.proficiency }}%</span>
+  </div>
+  <div
+    #progressBar
+    class="w-full h-6 bg-gray-200 rounded-lg overflow-hidden"
+  >
+    <div
+      class="h-full bg-gradient-to-r from-gh-blue to-blue-400 transition-all duration-1000 ease-out flex items-center justify-end px-2"
+      [style.width.%]="animatedProficiency"
+    >
+      <span
+        *ngIf="animatedProficiency > 15"
+        class="text-xs font-semibold text-white"
+      >
+        {{ skill.proficiency }}%
+      </span>
+    </div>
+  </div>
+  <div
+    *ngIf="skill.yearsOfExperience"
+    class="text-xs text-gh-light mt-1"
+  >
+    {{ skill.yearsOfExperience }} years experience
+  </div>
+</div>

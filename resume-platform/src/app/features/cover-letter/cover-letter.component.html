@@ -1,0 +1,80 @@
+<app-header></app-header>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div *ngIf="coverLetter" class="bg-white border border-gh-border rounded-lg shadow-lg p-8 md:p-12">
+    <!-- Header Actions -->
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 pb-6 border-b border-gh-border">
+      <a
+        routerLink="/"
+        class="text-gh-blue hover:underline mb-4 sm:mb-0"
+      >
+        ← Back to Resume
+      </a>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <select
+          (change)="switchTemplate($any($event.target).value)"
+          [value]="coverLetter.type"
+          class="px-4 py-2 border border-gh-border rounded-lg text-gh-dark bg-white hover:bg-gh-bg transition-colors"
+        >
+          <option *ngFor="let template of availableTemplates" [value]="template.type">
+            {{ template.title }}
+          </option>
+        </select>
+        <button
+          (click)="downloadPdf()"
+          class="px-6 py-2 bg-gh-blue text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          Download PDF
+        </button>
+      </div>
+    </div>
+
+    <!-- Cover Letter Content -->
+    <div class="space-y-6">
+      <!-- Header with Contact Info (Right-aligned) -->
+      <div class="text-right mb-8">
+        <p class="font-bold text-gh-dark">{{ personalInfo.name }}</p>
+        <p class="text-gh-light">{{ personalInfo.email }}</p>
+        <p class="text-gh-light">{{ personalInfo.phone }}</p>
+        <p class="text-gh-light">{{ personalInfo.location }}</p>
+      </div>
+
+      <!-- Date -->
+      <div class="mb-6">
+        <p class="text-gh-dark">{{ getCurrentDate() }}</p>
+      </div>
+
+      <!-- Greeting -->
+      <div class="mb-6">
+        <p class="text-gh-dark">{{ coverLetter.greeting }}</p>
+      </div>
+
+      <!-- Body Paragraphs -->
+      <div class="space-y-4">
+        <p
+          *ngFor="let paragraph of coverLetter.paragraphs"
+          class="text-gh-dark leading-relaxed text-justify"
+        >
+          {{ paragraph }}
+        </p>
+      </div>
+
+      <!-- Closing -->
+      <div class="mt-8 space-y-4">
+        <p class="text-gh-dark">{{ coverLetter.closing }}</p>
+        <div class="text-gh-dark whitespace-pre-line">
+          {{ coverLetter.signature }}
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="mt-12 pt-6 border-t border-gh-border text-center">
+        <p class="text-sm text-gh-light">
+          Generated from <a href="/" class="text-gh-blue hover:underline">tusharsahu.github.io/resume-platform</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<app-footer></app-footer>
