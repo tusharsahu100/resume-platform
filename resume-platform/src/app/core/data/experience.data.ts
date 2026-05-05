@@ -4,21 +4,23 @@ export const EXPERIENCES: Experience[] = [
   {
     id: 'nice-systems',
     company: 'NICE Systems',
-    role: 'Specialist Software Engineer',
+    role: 'Specialist Software Engineer / Team Lead',
     location: 'Pune, India',
     duration: 'Jun 2023 – Present',
     startDate: new Date('2023-06-01'),
     description: [
-      'Leading the Web Studio project with technologies Angular, .NET, AWS.',
-      'Responsible for team leadership – mentoring, guiding, and assigning tasks to ensure smooth delivery.',
-      'Collaborating with the Product Owner to gather requirements and align deliverables with business goals.',
-      'Actively contributing in design and development of core features while maintaining best practices and coding standards.',
-      'Driving improvements in application scalability, performance, and cloud deployment.'
+      'Leading 5-6 developers on the Web Studio project using Angular Framework, .NET, and AWS cloud infrastructure for CXone enterprise platform serving Financial and Telecom domains.',
+      'Driving feature delivery and sprint execution with consistent 20% velocity improvement through AI-assisted development practices, modern tooling adoption, and process optimization.',
+      'Mentoring team members on Angular best practices, .NET backend development, and AWS cloud architecture – conducting code reviews, pair programming sessions, and technical upskilling workshops.',
+      'Collaborating with Product Owner to gather requirements, define technical solutions, and align sprint deliverables with business goals while ensuring architectural consistency.',
+      'Delivering 50+ major features including dynamic workflow builders, real-time dashboards, and scalable microservices while maintaining high code quality and test coverage standards.'
     ],
-    technologies: ['Angular', '.NET', 'AWS', 'TypeScript', 'Team Leadership'],
+    technologies: ['Angular', '.NET', 'AWS', 'TypeScript', 'Team Leadership', 'AI-Assisted Development'],
     achievements: [
-      'Led UI team delivering critical Web Studio features',
-      'Improved application scalability and AWS deployment practices'
+      'Led team of 5-6 developers delivering 50+ major features for CXone Web Studio platform',
+      'Improved sprint velocity by 20% through AI-assisted development practices and team enablement',
+      'Mentored engineers on Angular, .NET, and AWS, conducting regular code reviews and upskilling sessions',
+      'Collaborated with Product Owner to define technical solutions and align deliverables with business goals'
     ]
   },
   {
