@@ -1,4 +1,4 @@
-export type SkillCategory = 'Frontend' | 'Backend' | 'Tools' | 'Other';
+export type SkillCategory = 'Frontend' | 'Backend' | 'Tools' | 'Leadership' | 'Other';
 
 export interface Skill {
   category: SkillCategory;
