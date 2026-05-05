@@ -16,6 +16,13 @@ export const SKILLS: Skill[] = [
   { category: 'Backend', name: 'Express.js', proficiency: 75, yearsOfExperience: 5 },
   { category: 'Backend', name: 'MongoDB', proficiency: 75, yearsOfExperience: 5 },
 
+  // Leadership & Management
+  { category: 'Leadership', name: 'Team Leadership & Management', proficiency: 90, yearsOfExperience: 6 },
+  { category: 'Leadership', name: 'Mentoring & Coaching', proficiency: 85, yearsOfExperience: 6 },
+  { category: 'Leadership', name: 'Agile/Scrum Leadership', proficiency: 85, yearsOfExperience: 8 },
+  { category: 'Leadership', name: 'AI-Assisted Development Practices', proficiency: 80, yearsOfExperience: 2 },
+  { category: 'Leadership', name: 'Cross-functional Collaboration', proficiency: 85, yearsOfExperience: 6 },
+
   // Tools
   { category: 'Tools', name: 'Git', proficiency: 85, yearsOfExperience: 12 },
   { category: 'Tools', name: 'WebStorm', proficiency: 85, yearsOfExperience: 8 },
